@@ -45,7 +45,7 @@ class _WidgetToImageState extends State<WidgetToImage> {
 
   void convertToImage(Duration duration) async {
     final boundary = globalKey.currentContext!.findRenderObject() as RenderRepaintBoundary;
-    final encodedWidget = EncodedWidget.fromRenderRepaintBoundary(
+    final encodedWidget = await EncodedWidget.fromRenderRepaintBoundary(
       boundary, 
       widget.pixelRatio, 
       widget.format

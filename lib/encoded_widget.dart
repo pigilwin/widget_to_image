@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 class EncodedWidget {
 
-  static fromRenderRepaintBoundary(
+  static Future<EncodedWidget> fromRenderRepaintBoundary(
     RenderRepaintBoundary boundary,
     double pixelRatio,
     ImageByteFormat format
