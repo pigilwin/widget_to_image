@@ -4,14 +4,16 @@
 
 A package for creating images from the widgets within your flutter application. The logo for the package above has been generated using this package.
 
-## Customisation properties
+## WidgetToImage
 
-The widget can be customised to convert the child widget into a image. These properties are as follows:
+These properties are as follows:
 
 - `pixelRatio` - This the scale between the logical pixels and the size of the output image. It is independent of the [dart:ui.FlutterView.devicePixelRatio] for the device, so specifying 1.0 (the default) will give you a 1:1 mapping between logical pixels and the output pixels in the image.
 - `format` - specifies the format in which the bytes will be returned.
 - `child` - The child to be converted to the image.
 - `callback` - A callback to be invoked when the `child` has been converted to `EncodedWidget`.
+
+### Example
 
 ```dart
 WidgetToImage(
@@ -23,6 +25,12 @@ WidgetToImage(
   child: Child(),
 )
 ```
+
+## EncodedWidget
+
+These methods are as follows:
+
+- `toBase64()` - This method will convert the `EncodedWidget` to a `base64` representation of the image.
 
 ## A working Example
 
