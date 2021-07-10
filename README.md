@@ -1,14 +1,17 @@
-# widget_to_image
+# Widget To Image
 
-A new Flutter package project.
+![logo for the package](./images/logo.png "Widget to Image")
 
-## Getting Started
+A package for creating images from the widgets within your flutter application. The logo for the package above has been generated using this package.
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## A working Example
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+An example app with working code can be found in the `example` directory
+
+## How to run the tests
+
+How to run the tests and check the coverage is 100%.
+Run the test with `flutter test --coverage`.
+Once this has been completed use `genhtml coverage/lcov.info --o coverage/html`.
+This will generate the viewable coverage information from the flutter tests, use `open coverage/html/index.html`.
+
