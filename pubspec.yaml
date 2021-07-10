@@ -1,5 +1,5 @@
 name: widget_to_image
-description: A new Flutter package project.
+description: A package for converting widgets to images
 version: 0.0.1
 homepage:
 
